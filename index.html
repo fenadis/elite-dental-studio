@@ -7,38 +7,60 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400&display=swap" rel="stylesheet"> <!-- Bodoni Moda -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> <!-- Pacifico -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> <!-- Ionicons script -->
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="images/GRILL TEETH.png" alt="Elite Dentist Studio Logo" class="logo-image"> <!-- Add your logo here -->
-            <h1>
-                <span class="gold">Elite</span> 
-                <span class="white">Dental</span> 
-                <span class="gold">Studio</span>
-            </h1>
-            <h2 class="cosmetic-dentistry">Cosmetic Dentistry</h2>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            <div class="header-title">
+                <h1>
+                    <span class="gold">Elite</span>
+                    <span class="white">Dental</span>
+                    <span class="gold">Studio</span>
+                </h1>
+                <h2 class="cosmetic-dentistry">Cosmetic Dentistry</h2>
+            </div>
+            <div class="logo">
+                <img src="images/GRILL TEETH.png" alt="Elite Dentist Studio Logo" class="logo-image">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
     </header>
-    <div class="container">
-        <img src="images/grills.jpg" alt="Person with grills" class="moving-image">
-        <img src="images/grill2.jpg" alt="Grill 2" class="moving-image">
-        <img src="images/grill3.jpg" alt="Grill 3" class="moving-image">
-        <img src="images/grill4.jpg" alt="Grill 4" class="moving-image">
-    </div>
+
+    <main class="main-content">
+        <!-- Large Welcome Statement on the Left -->
+        <div class="welcome-section">
+            <h1 class="welcome-text">Welcome to Elite Dental Studio</h1>
+            <p class="welcome-description">Your one-stop destination for crafting the perfect smile. From subtle gleam to dazzling grills, let us help you stand out.</p>
+        </div>
+
+        <!-- Images Section on the Right -->
+        <div class="image-section">
+            <img src="images/grills.jpg" alt="Person with grills" class="moving-image">
+            <img src="images/grill2.jpg" alt="Grill 2" class="moving-image">
+            <img src="images/grill3.jpg" alt="Grill 3" class="moving-image">
+            <img src="images/grill4.jpg" alt="Grill 4" class="moving-image">
+        </div>
+    </main>
+
     <footer>
         <div class="social-media">
-            <a href="#" class="social-button"><img src="images/whatsapp.png" alt="WhatsApp" class="social-icon"></a>
-            <a href="#" class="social-button"><img src="images/tiktok.png" alt="TikTok" class="social-icon"></a>
-            <a href="#" class="social-button"><img src="images/instagram.png" alt="Instagram" class="social-icon"></a>
-        </div>   
+            <a href="https://twitter.com/elitedentalstudioke" target="_blank" class="social-button">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="https://instagram.com/_EliteDentalStudio_ke" target="_blank" class="social-button">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://wa.me/+254705843074" target="_blank" class="social-button">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+        </div>
     </footer>
+    
 </body>
 </html>

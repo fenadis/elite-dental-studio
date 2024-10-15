@@ -2,26 +2,21 @@ body {
     font-family: 'Merriweather', serif;
     margin: 0;
     padding: 0;
-    background-color: rgba(255, 217, 0, 0.445); /* Brown body color */
-    color: GOLD; /* Default text color */
+    background-color: rgba(255, 217, 0, 0.445); /* Light brown body color */
+    color: gold; /* Default text color */
 }
 
 header {
     background-color: #0e0601; /* Darker brown for the header */
-    padding: 20px;
+    padding: 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-h1 {
-    margin:0;
-    font-size: 28px; /* Adjust as needed */
-}
 .logo-image {
-    width: 100px; /* Set the width as needed */
-    height: auto;  /* Maintain aspect ratio */
-    margin-right: 15px; /* Add some space between the logo and the text */
+    width: 100px; /* Set the width of the logo */
+    height: auto;
+    margin-right: 15px;
 }
 
 .gold {
@@ -32,60 +27,88 @@ h1 {
     color: white;
 }
 
+.header-title {
+    display: flex;
+    flex-direction: column; /* Stack the title and subtitle vertically */
+    margin-right: auto; /* Adjust margin as needed */
+}
+
+.header-title h1 {
+    margin: 0; /* Removes default margin */
+    font-size: 28px; /* Adjust as needed */
+}
+
 .cosmetic-dentistry {
     font-style: italic;
-    font-size: 12px;
-    text-align: left;
-    text-decoration: underline white;
-    text-decoration-thickness: 0.5px;
+    font-size: 12px; /* You can adjust this size */
+    color: white;
+    margin: 0; /* Removes margin */
+    line-height: 1; /* Sets line height to be tight */
 }
+
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex; /* Use flex to align nav items horizontally */
+    margin-left: auto; /* Pushes nav items to the right */
 }
 
 nav ul li {
-    display: inline;
-    margin-left: 20px; /* Space between menu items */
+    margin-left: 20px;
 }
 
 nav ul li a {
-    color: gold; /* Menu links in gold */
+    color: gold;
     text-decoration: none;
 }
 
-.container {
+/* Layout for Main Content */
+.main-content {
     display: flex;
-    flex-wrap: wrap; /* Allows images to move to the next line if necessary */
-    gap: 10px; /* Adds space between images */
-    justify-content: center; /* Centers images horizontally */
-    margin-top: 200px; /* Adjust the vertical positioning of the image container */
-    margin-left: 700px;
-    padding: 10px;
-    /* If you want to move the container further, you could add */
-    /* margin-left or margin-right for more control */
+    padding: 40px;
 }
 
-/* Example to align the container to the right or left */
-.container-left {
-    justify-content: flex-start; /* Aligns images to the left */
+/* Welcome Section on Left */
+.welcome-section {
+    flex: 2;
+    max-width: 600px;
+    margin-right: 40px;
 }
-.container-right {
-    justify-content: flex-end; /* Aligns images to the right */
+
+.welcome-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: red;
 }
+
+.welcome-description {
+    font-size: 24px;
+    margin-top: 20px;
+    color:black;
+}
+
+/* Image Section on Right */
+.image-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .moving-image {
-    width: 200px; /* Set a consistent width for all images */
+    width: 200px; /* Consistent width for images */
     height: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
 .moving-image:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    transform: scale(1.1); /* Slight zoom effect */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for emphasis */
 }
 
+/* Footer Styling */
 footer {
     position: fixed;
     bottom: 10px;
@@ -98,19 +121,19 @@ footer {
 
 .social-button {
     display: inline-block;
-    padding: 10px; /* Add padding to make it button-like */
+    padding: 10px;
     margin-left: 10px;
-    background-color:rgb(8, 7, 1); /* Button background color */
-    border-radius: 50%; /* Make the buttons circular */
+    background-color: rgb(8, 7, 1); /* Button background color */
+    border-radius: 50%; /* Circular buttons */
     text-align: center;
     transition: background-color 0.3s ease;
 }
 
 .social-button:hover {
-    background-color: #070501; /* Slightly darker gold on hover */
+    background-color: #070501; /* Darker color on hover */
 }
 
-.social-icon {
-    width: 30px;
-    height: auto;
+.social-button ion-icon {
+    font-size: 30px; /* Size of the ion icon */
+    color: gold; /* Icon color */
 }
